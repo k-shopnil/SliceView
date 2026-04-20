@@ -1,0 +1,8 @@
+glfw
+PyOpenGL
+numpy
+imgui
+trimesh
+groq
+shapely
+mapbox-earcut

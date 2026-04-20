@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+.idea/
+generated_mesh.obj
+TripoSR/ai_engine_stable.py
+
+dist/
+build/
+*.spec
