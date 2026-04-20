@@ -125,7 +125,7 @@ def run_ai_worker(image_path):
     try:
         # Calls the ai_engine.py exactly as you configured it
         subprocess.run(
-            [sys.executable, "TripoSR/ai_engine.py", image_path, output_obj],
+            [sys.executable, "core/ai_engine.py", image_path, output_obj],
             check=True,
             capture_output=True,
             text=True
@@ -157,7 +157,7 @@ def main():
     glfw.window_hint(glfw.OPENGL_PROFILE, glfw.OPENGL_CORE_PROFILE)
     glfw.window_hint(glfw.OPENGL_FORWARD_COMPAT, True)
 
-    window = glfw.create_window(1280, 720, "SliceView Pro - BUBT Edition", None, None)
+    window = glfw.create_window(1280, 720, "SliceView Beta v1.2.1", None, None)
     glfw.make_context_current(window)
     glEnable(GL_DEPTH_TEST)
     glDisable(GL_CULL_FACE)
